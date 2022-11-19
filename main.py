@@ -39,7 +39,7 @@ def app():
             driver.execute_script("arguments[0].click();", element_vote)
             element_submit = driver.find_element(By.CSS_SELECTOR, f"#{polls[i]} > form > .totalpoll-buttons > button.totalpoll-buttons-vote")
             driver.execute_script("arguments[0].click();", element_submit)
-            time.sleep(5)
+            time.sleep(10)
             try: 
                 element_error = driver.find_element(By.CSS_SELECTOR, f"#{polls[i]} > form > .totalpoll-message-error")
                 print(element_error.text)
