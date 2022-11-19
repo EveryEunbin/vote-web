@@ -22,7 +22,7 @@ for option in options:
 polls = ['totalpoll-poll-23795', 'totalpoll-poll-23796', 'totalpoll-poll-23800']
 id_polls = ['choice-9d82d614-47e4-4216-b3fd-8eaacfb22324-selector', 'choice-d6501067-de0b-47b1-bf84-f84f73305777-selector', 'choice-76cad3be-76e4-406c-80cc-8cb18f1abd75-selector']
 
-def app():
+def app_test():
     try:
         driver = webdriver.Chrome(options=chrome_options) # run on github action
         # driver = webdriver.Chrome() # run on your computer
@@ -50,8 +50,8 @@ def app():
 if __name__ == '__main__':
     start_time = datetime.now()
     print('Time start:', str(start_time))
-    app()
-    app()
+    app_test()
+    app_test()
     end_time = datetime.now()
     print('Time end:', str(end_time))
     print('Time difference:', str(end_time - start_time))
