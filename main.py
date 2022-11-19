@@ -51,7 +51,7 @@ if __name__ == '__main__':
     start_time = datetime.now()
     print('Time start:', str(start_time))
     app_test()
-    app_test()
+    # app_test()
     end_time = datetime.now()
     print('Time end:', str(end_time))
     print('Time difference:', str(end_time - start_time))
